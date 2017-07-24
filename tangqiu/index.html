@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹球小游戏</title>
+</head>
+<style>
+#main {
+	width: 400px;
+	height: 400px;
+	background-color: gray;
+	margin: 0 auto;
+	position: relative;
+}
+#ball {
+	width: 30px;
+	height: 30px;
+	background-color: yellow;
+	border-radius: 100%;
+	position: absolute;
+}
+#board {
+	width: 60px;
+	height: 20px;
+	background-color: red;
+	position: absolute;
+	left: 170px;
+	bottom: 0px;
+}
+	
+</style>
+<body>
+	<div id="main">
+		<div id="ball" style="left: 0px;top: 0px"></div>
+		<div id="board"></div>
+	</div>
+</body>
+<script>
+var main = document.getElementById('main');
+var ball = document.getElementById('ball');
+var board = document.getElementById('board');
+
+
+ball.run = function() {
+	var left = parseInt(this.style.left)+this.speedX;
+	var top = parseInt(this.style.top)+this.speedY;
+	this.style.left= left+'px';
+	this.style.top= top+'px';
+	this.check(left,top);
+}
+ball.check= function(left,top) {
+	if(left<=0||left>=370){  //球碰到左右壁了
+		this.turnX();
+	}
+	if(top<=0){  //球碰到上壁了
+		this.turnY();
+	}
+	if(top>=370){
+		clearInterval(clock);
+		alert('输了');
+		return;
+	}
+
+	//检测碰到木板
+	var bleft = parseInt(board.style.left);  //木板的左边距
+	var btop = parseInt(board.style.top);  //木板的上边距
+	if(left+15>=bleft && left+15<=bleft+60 && top+30>=btop) {
+ 		this.turnY();
+	}
+
+}
+ball.turnX = function(){
+	this.speedX=-this.speedX;
+}
+ball.turnY = function(){
+	this.speedY=-this.speedY;
+}
+
+var clock = setInterval(function() {
+	ball.run();
+},20);
+
+main.onmousemove = function(e) {
+	if(e.srcElement!==main){
+		return
+	}
+	board.style.left = e.offsetX-30+'px';
+	board.style.top = e.offsetY-20+'px';
+}
+
+ball.init = function() {
+	ball.speedX = 3;
+	ball.speedY = 4;
+}
+ball.init();
+</script>
+</html>

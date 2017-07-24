@@ -1,0 +1,233 @@
+.h2title {
+	height: 76px;
+	text-align: center;
+	font: normal 700 24px "微软雅黑";
+	line-height: 76px;
+	position: relative;
+}
+.more {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: #666;
+	font-size: 12px;
+}
+.p1 {
+	font: normal 700 18px "微软雅黑";
+	line-height: 36px;
+	padding-left: 10px;
+}
+.p2 {
+	font-family: "微软雅黑";
+	padding-left: 10px;
+}
+/*首页导航   S*/
+.nav {
+	height: 77px;
+	background-color: #fff;
+}
+.nav .nav_c {
+	height: 77px;
+}
+.nav .nav_c li {
+	width: 115px;
+	float: left;
+	font: normal normal 18px "微软雅黑";
+	line-height: 77px;
+	text-align: center;
+	margin-right: 20px;
+}
+.nav .nav_c .xiazai {
+	width: 150px;
+}
+.nav .nav_c li a {
+	color: #666;
+}
+.nav .nav_c li:hover {
+	background-color: #c70202;
+}
+.nav .nav_c li:hover a{
+	color: white;
+}
+/*首页导航   E*/
+/*首页banner   S*/
+.banner {
+	position: relative;
+}
+.banner ul {
+	width: 1320px;
+	margin: 0 auto;
+}
+.banner ul li {
+	float: left;
+	width: 330px;
+	background-color:#c70202;
+	position: relative;
+}
+.banner ul li img {
+	vertical-align: middle;
+	width: 100%;
+}
+.banner .des {
+	width: 330px;
+	height: 63px;
+	background-color: rgba(255,255,255,.6);
+	position: absolute;
+	bottom:0px;
+	left: 0px;
+}
+.banner .arrow .a_left {
+	display: inline-block;
+	width: 145px;
+	height: 77px;
+	background:url(../image/jiantouzuo.png) -100px -120px;
+	/*background-color: rgba(255,255,255,.6);*/
+	position: absolute;
+	top: 160px;
+}
+.banner .arrow .a_left {
+	left: 30px;
+}
+.banner .arrow .a_right {
+	right: 30px;
+}
+.banner .arrow .word {
+	font: normal 400 18px "微软雅黑";
+	color: #666;
+	display: block;
+	padding: 27px 0 0 55px;
+}
+.banner .arrow .a_left:hover span{
+	color: red;
+}
+.banner .arrow:hover .a_left {
+	background-color: rgba(255,255,255,.6);
+}
+/*首页banner   E*/
+
+/*首页搜索    S*/
+.search {
+	height: 100px;
+	background-color: #3f3a32;
+	overflow: hidden;
+}
+.search .s_center {
+	width: 728px;
+	height: 77px;
+	margin: 12px auto;
+	background-color: white;
+}
+.search .s_center .txt {
+	width: 510px;
+	height: 77px;
+	outline: none;
+	font: normal 400 18px "微软雅黑";
+	padding-left: 45px;
+}
+.search .s_center .btn {
+	width: 173px;
+	height: 77px;
+	background-color: red;
+	border: none;
+	outline: none;
+	font: normal normal 18px "微软雅黑";
+	color: #fff;
+}
+/*首页搜索    E*/
+/*首页菜单   S*/
+.menu {
+	overflow: hidden;    /*切除超过的部分*/
+}
+.menu .img{
+	width: 1010px;
+}
+.menu .img li {
+	float: left;
+	width: 334px;
+}
+.menu .img img {
+	vertical-align: middle;
+}
+.menu .img .word {
+	width: 334px;
+	height: 57px;
+	background-color: #fff;
+}
+.arrow_pos {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.arrow_pos .arrow a {
+	width: 40px;
+	height: 110px;
+	display: inline-block;
+	background-color: red;
+	position: absolute;
+	top:155px;
+	background:url(../image/arrow.png);
+}
+.arrow_pos .arrow a:hover {
+	background-color: rgba(255,255,255,.6);
+}
+.arrow_pos .arrow .a1 {
+	left: 30px;
+	background-position:  0 -20px;
+}
+.arrow_pos .arrow .a2 {
+	right: 30px;
+	background-position:  -50px -10px;
+}
+/*首页菜单    E*/
+/*首页食材    S*/
+.food .f_nva {
+	background-color: white;
+}
+.food .f_nva  li{
+	float: left;
+	height: 42px;
+	font: normal 400 22px "微软雅黑";
+	width: 100px;
+	line-height: 42px;
+	text-align: center;
+}
+.food .f_nva  li:hover {
+	background-color: red;
+}
+.food .f_nva  li:hover a {
+	color: white;
+}
+.food .f_nva  li a {
+	color: #666;
+}
+.food {
+
+	overflow: hidden;
+}
+.food .f_img {
+	width: 1010px;
+}
+.food .f_img li{
+	float: left;
+	width: 167px;
+	height: 167px;
+	background-color: red;
+	position: relative;
+}
+.food .f_img li img {
+	width: 167px;
+	height: 167px;
+}
+.food .f_img li span {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 61px;
+	width: 167px;
+	background-color: rgba(255,255,255,.6);
+	text-align: center;
+	font: normal 700 18px "微软雅黑";
+	line-height: 61px;
+}
+
+/*首页食材	  E*/

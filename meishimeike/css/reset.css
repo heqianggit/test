@@ -1,0 +1,41 @@
+html,body,ul,li,h1,h2,h3,form,p,img{
+	padding: 0;
+ 	margin: 0;
+}
+img {
+	border: none;
+}
+ul {
+	list-style: none;
+}
+input {
+	padding-top: 0;
+	padding-bottom: 0px;
+	border: none;
+}
+a {
+	text-decoration: none;
+}
+body{
+	font: normal normal 12px "宋体";
+	color: #4c4c4c;
+	background-color: #fae8c8;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/*清除浮动*/
+.clearfix:after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix {
+	zoom:1;
+}

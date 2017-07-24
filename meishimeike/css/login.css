@@ -1,0 +1,103 @@
+/* 内容 */
+
+.main {
+	height: 800px;
+}
+.main .m_left img {
+	height: 300px;
+	width: 450px;
+	margin-top: 130px;
+	margin-left: 50px;
+}
+.main .m_right {
+	width: 450px;
+	height:620px;
+	background-color: #fff;
+	margin-top: 85px;
+	padding: 0 16px;
+	position: relative;
+
+}
+.main .m_right h2 {
+	font:normal 400 30px "微软雅黑";
+	line-height: 100px;
+	height: 100px;
+	margin-left: 25px;
+}
+.main .m_right input {
+	width: 400px;
+	height: 58px;
+	border: 1px solid #d8d8d8;
+	font-size: 24px;
+	padding-left: 35px;
+}
+.main .m_right .pword {
+	margin-top: 34px;
+}
+.main .m_right .ren {
+	position: absolute;
+	width: 20px;
+	height: 24px;
+	top: 118px;
+	left: 28px;
+	background: url(../image/dengluyemian.png) -340px -158px;
+
+}
+.main .m_right .suo {
+	position: absolute;
+	width: 20px;
+	height: 24px;
+	top: 212px;
+	left: 26px;
+	background: url(../image/dengluyemian.png) -335px -203px;
+} 
+.main .m_right .remember {
+	height: 100px;
+	width: 437px;
+	font: normal normal 20px "微软雅黑";
+	line-height: 100px;
+}
+.main .m_right .remember input {
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+.main .m_right .loginbtn {
+	width: 437px;
+	height: 60px;
+	padding:0px; 
+	background-color: #e60012;
+	font-size: 24px;
+	color: #fff;
+}
+.main .m_right .other {
+	font: normal normal 16px "微软雅黑";
+	line-height: 130px;
+}
+.main .m_right .login_type li {
+	font-size: 12px;
+	width: 150px;
+	text-align: center;
+}
+.main .m_right .login_type .qq {
+	float: left;
+	height: 25px;
+	width: 15px;
+	background: url(../image/dengluyemian.png) -334px -362px;
+}
+.main .m_right .login_type .weibo {
+	float: left;
+	height: 25px;
+	width: 20px;
+	background: url(../image/dengluyemian.png) -413px -362px;
+}
+.main .m_right .login_type .mail {
+	float: left;
+	height: 25px;
+	width: 20px;
+	background: url(../image/dengluyemian.png) -489px -362px;
+}
+.main .m_right .login_type a {
+	color: #666666;
+}
+/* 内容 */

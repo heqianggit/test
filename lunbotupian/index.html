@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	div {
+		width: 600px;
+		height: 280px;
+		margin: 0 auto;
+		border: 1px solid red;
+	}
+	ul {
+		float: right
+	}
+	li {
+		list-style: none;
+		border: 1px solid gray;
+		margin: 20px 10px;
+		width: 18px;
+		height: 18px;
+		text-align: center;
+		line-height: 18px;
+	}
+</style>
+<body>
+	<div>
+		<img id="img"  alt="" onmouseover="stop()" onmouseout="start()" src="1.png">
+	<ul>
+		<li id="li1" onmouseover="ting(1,this)" onmouseout="start()">1</li>
+		<li id="li2" onmouseover="ting(2,this)" onmouseout="start()">2</li>
+		<li id="li3" onmouseover="ting(3,this)" onmouseout="start()">3</li>
+	</ul>
+	</div>
+</body>
+<script>
+	window.onload = init;
+	var time = setInterval('tupian()',1000);
+	var img = document.getElementById('img');
+	function init() {
+		var li1 = document.getElementById('li1');
+		li1.style.background ="orange";
+
+	}
+	var i = 1;
+	function tupian() {
+		i++;
+		if(i==4){
+			i=1;
+		}
+		img.src = i+".png";
+		var lis = document.getElementById('li'+i);
+		clearcolor()
+		lis.style.background ="orange";
+	}
+	function stop() {
+		clearInterval(time);
+	}
+	function start() {
+		time=setInterval('tupian()',1000);
+	}
+	function ting(m,n) {
+		img.src = m+".png";
+		clearInterval(time);
+		clearcolor()
+		n.style.background = "orange";
+	}
+	//清除所有li标签的颜色
+	function clearcolor() {
+		for( var j = 1;j<=3;j++){
+		var li = document.getElementById('li'+j);
+		li.style.background = "white";
+		}
+	}
+</script>
+</html>

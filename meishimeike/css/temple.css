@@ -1,0 +1,169 @@
+.center {
+	width: 1000px;
+	margin: 0 auto;
+}
+/*顶部*/
+.top {
+	height: 47px;
+	background-color: #e9e8e8;
+}
+.top .top_c {
+	height: 47px;
+	line-height: 47px;
+}
+/*顶部*/
+/*LOGO*/
+.logo {
+	height: 99px;
+	background-color: #c70202;
+}
+.logo .l_c {
+	height: 99px;
+}
+.logo .l_left h1 a {
+	width: 221px;
+	height: 99px;
+	background-color: #c70202;
+	display: inline-block;
+	background: url(../image/logo1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	text-indent: -1000em;
+}
+.l_center {
+	width: 296px;
+	height: 28px;
+	background-color: #fff;
+	margin: 34px 0 0 70px;
+	border-radius: 5px;         /*设置圆角*/
+	padding: 1px;
+}
+.l_center .txt {
+	width: 236px;
+	height: 26px;
+	border: none;
+	outline: none;
+}
+.l_center .btn{
+	width: 60px;
+	height: 28px;
+	background-color: #c70202;
+	border:none;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+}
+.l_right {
+	margin-top: 35px;
+}
+.l_right li{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 20px;
+}
+.l_right li a {
+	color: #fff;
+}
+.l_right input {
+	width: 56px;
+	height: 30px;
+	font-size: 14px;
+	background-color: #fff;
+	border-radius: 2px;
+}
+.l_right li .qq {
+	display: inline-block;
+	width: 14px;
+	height: 10px;
+	background: url(../image/dengluyemian.png) -431px -41px;
+	margin-right: 3px;
+	vertical-align: middle;     /*居中*/
+}
+.l_right li .sina {
+	display: inline-block;
+	width: 14px;
+	height: 10px;
+	background: url(../image/dengluyemian.png) -463px -41px;
+	margin-right: 3px;
+	vertical-align: middle; 
+}
+/*LOGO*/
+/*内容*/
+
+
+/*内容*/
+/*底部*/
+.foot {
+	height: 273px;
+	background-color: #2f2f2f;
+	padding: 10px;
+}
+.f_border {
+	height: 273px;
+	border: 1px solid #ffd283;
+	position: relative;
+}
+.f_border s {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	background: url(../image/yuan.png);
+}
+.f_border .s1{
+	top:-1px;
+	left:-1px;
+	background-position: right bottom;
+}
+.f_border .s2{
+	top:-1px;
+	right:-1px;
+	background-position: left bottom;
+
+}
+.f_border .s3{
+	bottom:-1px;
+	left:-1px;
+	background-position: right top;
+
+}
+.f_border .s4{
+	bottom:-1px;
+	right:-1px;
+	background-position: left top;
+
+}
+.foot .f_left {
+	margin-top: 55px;
+	color: #cccccc;
+
+}
+.foot .f_left li{
+	height: 30px;
+	line-height: 30px;
+}
+.foot .f_left li span {
+	font-size: 16px;
+	color: #ff3232;
+}
+.f_right{
+	margin-top: 34px;
+}
+.f_right li{
+	float: left;
+	width: 105px;
+	height: 150px;
+	margin-left: 20px;
+}
+}
+.f_right a{
+	display:inline-block;
+}
+.f_right span{
+	width: 105px;
+	color: #666666;
+	display:block;
+	text-align: center;
+	margin-top:10px;
+/*底部*/
+
